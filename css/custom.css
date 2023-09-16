@@ -1,0 +1,159 @@
+body > .container {
+    max-width: 70rem;
+}
+
+.nav-container {
+    max-width: 70rem;
+    margin: auto;
+}
+html {hyphens: auto;}
+
+p {
+    text-align: justify;
+}
+
+.flip {
+    display: inline-block;
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+/* .profilephoto {
+    float: left;
+    overflow: hidden;
+} */
+
+h2 {
+    scroll-margin-top: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.logo {    display: none;
+}
+h1, h2, h3, .brand{
+    font-family: 'Gloock', serif;
+    
+}
+
+.rainbow:hover, a:hover
+{
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1  !important;
+}
+
+figure {
+    margin: 0;
+}
+
+
+
+.pfp {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.75rem;
+
+    float: left;
+    overflow: hidden;
+    max-width: unset;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+
+
+.content {
+    margin-top: 6rem;
+}
+@media screen and (max-width: 725px) {
+.pfp {
+    margin-bottom: -0.5rem;
+    margin-left: 0;
+
+
+}
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+    
+    .logo {
+        display: unset;
+    }
+
+  .content {
+    margin-top: 1rem;
+}
+}
+
+.column {
+    clear: both;
+
+}
+
+/* .footer {
+    background-color: white;
+} */
+
+img {
+    -webkit-transition: filter 0.5s;
+    -moz-transition: filter 0.5s;
+    -ms-transition: filter 0.5s;
+    -o-transition: filter 0.5s;
+    transition: filter 0.5s;
+
+    
+
+}
+
+
+
+img:hover {
+    /* mix-blend-mode: hard-light; */
+    -webkit-filter: grayscale(100%) contrast(150%);
+    filter: grayscale(100%) contrast(150%);
+  }
+
+  .nav {
+
+    z-index: 999;
+
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    /* padding-left: 0; */
+  }
+
+  .nav .brand, .nav a {
+    padding-left: 0;
+
+
+  }
+
+h2:before {
+    height: 4rem;
+    content: "";
+    display:block;
+  }
+
+  .nav .brand {
+    font-size: 3rem;
+}
+
+.item {
+    text-indent: -2em;
+    list-style-type: none;
+  }
