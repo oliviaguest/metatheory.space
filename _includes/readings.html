@@ -1,0 +1,23 @@
+{% assign readings = site.data.readings | sort: 'date' %}
+
+<h2 id="readings"><a href="#readings">Readings</a></h2>
+
+<ul>
+{% for reading in readings %} 
+  <li class="item">
+    {{ reading.authors }}
+    ({% if reading.status == 'inpress' %}{{ reading.status }}{% else %}{{reading.date | date: "%Y"}}{% endif %}).
+    <span class="title">{% if reading.doi %}
+      <a href="//doi.org/{{ reading.doi }}">{{ reading.title }}</a>{% elsif reading.url %}
+      <a href="{{ reading.url }}">{{ reading.title | capitalize}}</a>{% elsif reading.arxiv %}
+      <a href="{{ reading.arxiv }}">{{ reading.title | capitalize}}</a>{% elsif reading.pdf %}
+      <a href="{{ reading.pdf }}">{{ reading.title | capitalize}}</a>{% else %} {{ reading.title }}
+      {% endif %}</span>.
+      {% if reading.journal %}<i>{{ reading.journal }}</i>.
+      {% elsif reading.server %}<i>{{ reading.server }}</i>. {% endif %}
+
+      {% if reading.doi %}<a href="//doi.org/{{ reading.doi }}">https://doi.org/{{ reading.doi }}</a>
+      {% elsif reading.zenodo %}<a href="{{ reading.zenodo }}">{{ reading.zenodo }}</a>{% endif %}
+  </li>
+{% endfor %}
+</ul>

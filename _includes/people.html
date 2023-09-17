@@ -1,0 +1,19 @@
+{% assign people = site.people | sort: 'surname' %}
+
+<h2 id="people"><a href="#people">people</a></h2>
+
+<div class="row">
+
+{% for person in people %} 
+
+  <div class="col-12 col-12-md col-4-lg">
+    <h3>{{ person.firstname }} {{ person.surname }}</h3>
+    <figure>
+      <img class="pfp" src="{{ person.image_path }}">
+    </figure>
+    <p>{{ person.bio }}</p>
+  </div>
+
+{% endfor %}
+
+</div>

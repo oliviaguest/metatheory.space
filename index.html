@@ -3,87 +3,15 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Welcome
+title: metatheory.space
 ---
 
 <p>Hello! 🍃 Welcome to our corner of the web where we keep you and ourselves updated with our theoretical and metatheoretical work that is embdeed in and touches on many of the cognitive sciences. What is metatheory, you ask? Well, you have certainly come to the right place to find out what (we think) it is.</p>
 
 <p>Below you will find a list of subprojects and people, papers and possibly more. Hopefully, these help shed light on what metatheory is or can be and how we use the term; but also generally on our work, which may or may not neatly fall under "metatheory" in every case.</p>
 
-<h2 id="about"><span class="rainbow">about</span></h2>
+{% include about.html %}
 
-<p>Meta (from Greek, μετά) means something before or above another; and theory (also originally from Greek, θεωρία) is, for our intents and purposes, a scientifc product. Both can be semantically and pragmatically analysed or engineered much further, as can their combination. But for now, we'll stop at this. Combining these concepts, putting the two words together, gives us  "metatheory", which hopefully readily implies ideas like: research about theories, thinking about theories, or theoreising about theories, and so on. 🤔</p>
+{% include people.html %}
 
-<p>What we are interested in specifically is taking the scientific lenses from cognitive science, and related disciplines and turning them onto the science itself to help us think about how humans (scientists, but not exclusively) come up with theoretical constructs and ideas, explanations, understandings, and how they come to be satisfied with and use them in their daily lives and jobs.  </p>
-
-<h2 id="people">people</h2>
-
-
-<div class="row">
-
-  <div class="col-12 col-12-md col-4-lg">
-    
-    <h3>Olivia Guest</h3>
-
-    <figure>
-      <img class="pfp"  src="https://avatars.githubusercontent.com/u/5082092?s=400&u=4afbedda836b7b8e8c8884c57e6b83f8f54a4162&v=4">
-      </figure>
-      <p>Olivia is interested in understanding, critiqueing, and rethinking (how we create scientific) theories. More at <a href="https://oliviaguest.com">oliviaguest.com</a>.</p>
-    </div>
-
-    <div class="col-12 col-12-md col-4-lg">
-      <h3>Iris van Rooij</h3>
-
-    <figure>
-      <img class="pfp" src="https://portal.ru.nl/profileservice/rest/1.0/profilephoto/216090?timestamp=1685618095&user=216090&hash=5afdb4ff8c4d8c81e8ac23e4c31f83c9&secure=false">
-      </figure>
-
-      <p>This text is within a <strong>block</strong>. Aliquam ultricies orci non erat condimentum, a imperdiet mi varius. Mauris porta ultricies euismod. Cras at rhoncus quam. Aliquam et aliquam lorem. Suspendisse id erat eu dui pharetra maximus et at nibh. Curabitur pellentesque est turpis, ac aliquet dui vestibulum in. Duis dapibus, ligula ut pulvinar volutpat, diam libero accumsan urna, eget rhoncus magna lectus vel leo.</p>
-    </div>
-
-    <div class="col-12 col-12-md col-4-lg">
-      <h3>Sam H. Forbes</h3>
-
-
-    <figure>
-      <img class="pfp"  src="https://samforbes.me/assets/img/Photoon28-05-2021atsmall2.jpeg">
-      </figure>
-
-      <p>This text is within a <strong>block</strong>. Aliquam ultricies orci non erat condimentum, a imperdiet mi varius. Mauris porta ultricies euismod. Cras at rhoncus quam. Aliquam et aliquam lorem. Suspendisse id erat eu dui pharetra maximus et at nibh. Curabitur pellentesque est turpis, ac aliquet dui vestibulum in. Duis dapibus, ligula ut pulvinar volutpat, diam libero accumsan urna, eget rhoncus magna lectus vel leo.</p>
-    </div>
-</div>
-
-
-<div class="columns">
-    <div class="column">
-
-    </div>
-    <div class="column">
-
-    </div>
-    <div class="column">
-
-    </div>
-  </div>
-
-  <!-- https://codepen.io/cferdinandi/pen/GRJvozN for scrolling better -->
-
-  <!-- https://anchorfonts.com/billy-pixel-font/ font -->
-
- 
-
-
-
-    <h2 id="readings">Readings</h2>
-
-<ul class="">
-  <li class="item">
-    <b>Guest, O.</b>
-    (2023).
-    <span class="">
-    <a href="//doi.org/10.31234/osf.io/8fxds">What makes a good theory, and how do we make a theory good?</a></span>.
-    <i>PsyArXiv</i>. 
-    <a href="//doi.org/10.31234/osf.io/8fxds">https://doi.org/10.31234/osf.io/8fxds</a>
-  </li>
-</ul>
-</div></div>
+{% include readings.html %}
