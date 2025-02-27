@@ -33,9 +33,13 @@ h1 {
 
 .logo {    display: none;
 }
-h1, h2, h3, .brand{
+h1, h2, .brand{
     font-family: 'Gloock', serif;
     
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 h1 a, h2 a, h3 a {
