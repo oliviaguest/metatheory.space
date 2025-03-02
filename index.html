@@ -1,19 +1,286 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 
-layout: default
-title: metatheory.space
----
+        <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+        <link rel="stylesheet" href="/css/custom.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/js/randomise.js"></script>
+        <title>metatheory.space</title>
+    </head>
 
-<!-- <p>Hello! 🍃 Welcome to a corner of the web where we keep you and ourselves updated with our theoretical and metatheoretical work that is embdeed in and touches on many of the cognitive sciences. What is metatheory, you ask? Well, you have certainly come to the right place to find out what (we think) it is.</p>
+    <style>
+        body.dark {
+          --bg-color: #000;
+          --bg-secondary-color: #131316;
+          --font-color: #f5f5f5;
+          --color-grey: #ccc;
+          --color-darkGrey: #777;
+        }
+      </style>
+      <script>
+        if (window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.body.classList.add('dark');
+        }
+      </script>
+
+    <body>
+
+        <nav class="nav">
+    <div class="nav-container">
+     <div class="nav-left">
+            <a class="brand" href="#top">
+                
+                <span class="logotext">
+                    metatheory<br/>
+                    <span class="lowertext">
+                        .space
+                    </span>
+                </span>
+
+            <a href="#about">about</a>
+            <!-- <a href="#people">people</a> -->
+            <a href="#readings">readings</a>
+        </div>
+    </div>
+</nav>
+
+        <div class="container"> 
+            <div class="content"> 
+            <main>
+                <!-- <p>Hello! 🍃 Welcome to a corner of the web where we keep you and ourselves updated with our theoretical and metatheoretical work that is embdeed in and touches on many of the cognitive sciences. What is metatheory, you ask? Well, you have certainly come to the right place to find out what (we think) it is.</p>
 
 <p>Below you will find a list of subprojects and people, papers and possibly more. Hopefully, these help shed light on what metatheory is or can be and how we use the term; but also generally on our work, which may or may not neatly fall under "metatheory" in every case.</p> -->
 
-{% include about.html %}
+<h2 id="about"><a href="#about">about</a></h2>
 
-<!-- {% include people.html %} -->
+<p>Hello! 🍃 metatheory.space is a monthly (every four weeks) <a href="https://en.wikipedia.org/wiki/Literature_circle">reading circle</a>, where we discuss in structured ways written works (e.g. preprints, journal articles, book chapters, books): a) written within or we deem them relevant to cognitive science; and b) from a metatheoretical perspective. That is to say, a perspective that takes into account relationships between theories, adjudications over theories, and any other considerations relating to theories, computational tractability, Ryle's regress, virtuous and vicious properties, whether the authors are naive in their computationalism, and so on <a class="citation" href="#guestmartin2025">(Guest &amp; Martin, 2025)</a>.</p>
 
-{% include readings.html %}
+<p>The works we discuss need not be theoretical themselves nor straightforwardly cognitive scientific. For example, empirical (e.g. experimental psychology or neuroscience) or engineering (e.g. machine learning or artificial intellignece) work can be proposed and then the frame would be to untangle the theoretical commitments implicit and explicit within such writing. If theoretical or computational modelling work is proposed, the same would apply anyway: to tease apart what the theory's commitments are and relate them to broader field level questions or desires, to critical treatments of their formalism and purpose, and so on. In the case of philosophical, or otherwise more obviously metatheoretical from the get go, work, we can also apply frames within the target work to theories or methodology we are already familiar with, for example.</p>
 
-{% include license.html %}
+<p>Analysis technique suggestions comprise many methods, from theoretical complexity analysis at the computational-level <a class="citation" href="#vanrooij2008">(van Rooij, 2008; van Rooij et al., 2024)</a>, to metatheoretical calculus analysis at the pre- and post-formal levels <a class="citation" href="#guestmartin2023">(Guest &amp; Martin, 2023; Guest &amp; Martin, 2024)</a>, to more zoomed-in analysies like separating vehicle versus content in computationalist theorising <a class="citation" href="#egan2020">(Egan, 2020)</a>.
+Furthermore, welcome are gender, coloniality, race, and other sociocultural consequences in the critique of theories, frameworks and general ways of doing and disseminating science <a class="citation" href="#guest2024">(Guest, 2024)</a>.
+</p>
+
+<ol class="bibliography"><li>
+<a href="https://doi.org/10.1080/03640210801897856"><span id="vanrooij2008">van Rooij, I. (2008). The Tractable Cognition Thesis. <i>Cognitive Science</i>, <i>32</i>(6), 939–984. https://doi.org/10.1080/03640210801897856</span></a>
+</li>
+<li>
+<a href="https://doi.org/10.1093/oso/9780190686673.003.0002"><span id="egan2020">Egan, F. (2020). A Deflationary Account of Mental Representation. In J. Smortchkova, K. Dołęga, &amp; T. Schlicht (Eds.), <i>What Are Mental Representations?</i> (pp. 26–53). Oxford University Press. https://doi.org/10.1093/oso/9780190686673.003.0002</span></a>
+</li>
+<li>
+<a href="https://doi.org/10.1007/s42113-022-00166-x"><span id="guestmartin2023">Guest, O., &amp; Martin, A. E. (2023). On Logical Inference over Brains, Behaviour, and Artificial Neural Networks. <i>Computational Brain &amp; Behavior</i>, <i>6</i>(2), 213–227. https://doi.org/10.1007/s42113-022-00166-x</span></a>
+</li>
+<li>
+<a href="https://doi.org/10.1007/s42113-024-00217-5"><span id="vanrooij2024">van Rooij, I., Guest, O., Adolfi, F., de Haan, R., Kolokolova, A., &amp; Rich, P. (2024). Reclaiming AI as a theoretical tool for cognitive science. <i>Computational Brain &amp; Behavior</i>, <i>7</i>(4), 616–636. https://doi.org/10.1007/s42113-024-00217-5</span></a>
+</li>
+<li>
+<a href="https://doi.org/10.1007/s42113-023-00193-2"><span id="guest2024">Guest, O. (2024). What Makes a Good Theory, and How Do We Make a Theory Good? <i>Computational Brain &amp; Behavior</i>, <i>7</i>(4), 508–522. https://doi.org/10.1007/s42113-023-00193-2</span></a>
+</li>
+<li>
+<a href="https://doi.org/10.31234/osf.io/eaf2z"><span id="guestmartin2024">Guest, O., &amp; Martin, A. E. (2024). <i>A Metatheory of Classical and Modern Connectionism</i>. https://doi.org/10.31234/osf.io/eaf2z</span></a>
+</li>
+<li>
+<a href="https://philsci-archive.pitt.edu/24834/"><span id="guestmartin2025">Guest, O., &amp; Martin, A. E. (2025). <i>Are Neurocognitive Representations ’Small Cakes’?</i> https://philsci-archive.pitt.edu/24834/</span></a>
+</li></ol>
+
+<!--  -->
+
+
+
+<!-- <p>This is a website for the metatheory.space <i>unlab</i> or <i>ungroup</i>. It's neither a lab nor research group in the traditional sense, but also <i>not not</i> that either since what else is a group of academics in science? We strive to be transparent about our institutional power, to wield it appropriately to help, support, and protect others when we can. 🌈 As such, we try to do our research — and our work in general — in ways that might seem radical, especially to those enculturated in traditional academic environments.</p>
+
+<p>Meta (from Greek, μετά) means something before or above another; and theory (also originally from Greek, θεωρία) is, for our intents and purposes, a scientifc product. Both can be semantically and pragmatically analysed or engineered much further, as can their combination. But for now, we'll stop at this. Combining these concepts, putting the two words together, gives us  "metatheory", which hopefully readily implies ideas like: research about theories, thinking about theories, or theoreising about theories, and so on. 🤔</p>
+
+<p>What we are interested in specifically is taking the scientific lenses from cognitive science, and related disciplines and turning them onto the science itself to help us think about how humans (scientists, but not exclusively) come up with theoretical constructs and ideas, explanations, understandings, and how they come to be satisfied with and use them in their daily lives and jobs.</p> -->
+
+<!-- 
+
+<h2 id="people"><a href="#people">people</a></h2>
+
+<div class="row">
+
+ 
+
+  <div class="col-12 col-12-md col-4-lg">
+    <h3>Olivia </br> Guest</h3>
+    <figure>
+      <img class="pfp" src="https://avatars.githubusercontent.com/u/5082092?v=4">
+    </figure>
+    <p>Olivia is interested in understanding, critiqueing, and rethinking (how we create scientific) theories. More at <a href="https://oliviaguest.com">oliviaguest.com</a>.</p>
+  </div>
+
+ 
+
+  <div class="col-12 col-12-md col-4-lg">
+    <h3>Marieke </br> Woendsdregt</h3>
+    <figure>
+      <img class="pfp" src="https://marieke-woensdregt.github.io/assets/sidebar_pic.jpg">
+    </figure>
+    <p></p>
+  </div>
+
+ 
+
+  <div class="col-12 col-12-md col-4-lg">
+    <h3>Iris </br> van Rooij</h3>
+    <figure>
+      <img class="pfp" src="https://portal.ru.nl/profileservice/rest/1.0/profilephoto/216090?timestamp=1694948226&user=216090&hash=5b818bcf0271fdcd808f4d5a019c0b3e&secure=false">
+    </figure>
+    <p></p>
+  </div>
+
+
+
+</div> -->
+
+
+
+<h2 id="readings"><a href="#readings">readings</a></h2>
+
+<p>Potential upcoming readings and suggestions can be found <a href="https://docs.google.com/spreadsheets/d/1EX6SmEVbmLl9RTRuYOb8cuEHXAKsBqfoCvaal1GFpRI/edit?usp=sharing">here</a>.
+</p>
+
+<!-- <ul>
+ 
+  <li class="item">
+    Guest, O. & Martin, A. E.
+    (2021).
+    <span class="title">
+      <a href="//doi.org/10.1177/1745691620970585">How Computational Modeling Can Force Theory Building in Psychological Science</a></span>.
+      <i>Perspectives on Psychological Science</i>.
+      
+
+      <a href="//doi.org/10.1177/1745691620970585">https://doi.org/10.1177/1745691620970585</a>
+      
+  </li>
+ 
+  <li class="item">
+    Birhane, A. & Guest, O.
+    (2021).
+    <span class="title">
+      <a href="//doi.org/10.7146/kkf.v29i2.124899">Towards Decolonising Computational Sciences</a></span>.
+      <i>Women, Gender & Research</i>.
+      
+
+      <a href="//doi.org/10.7146/kkf.v29i2.124899">https://doi.org/10.7146/kkf.v29i2.124899</a>
+      
+  </li>
+ 
+  <li class="item">
+    Forbes, S. H., Aneja, P., & Guest, O.
+    (2021).
+    <span class="title">
+      <a href="//doi.org/10.31234/osf.io/ajynp">The Myth of Normative Development</a></span>.
+      <i>PsyArXiv</i>. 
+
+      <a href="//doi.org/10.31234/osf.io/ajynp">https://doi.org/10.31234/osf.io/ajynp</a>
+      
+  </li>
+ 
+  <li class="item">
+    Spanton, R. W. & Guest, O.
+    (2022).
+    <span class="title">
+      <a href="//doi.org/10.48550/arXiv.2202.08674">Measuring Trustworthiness or Automating Physiognomy? A Comment on Safra, Chevallier, Grèzes, and Baumard (2020)</a></span>.
+      <i>arXiv</i>. 
+
+      <a href="//doi.org/10.48550/arXiv.2202.08674">https://doi.org/10.48550/arXiv.2202.08674</a>
+      
+  </li>
+ 
+  <li class="item">
+    Forbes, S. H., Aneja, P., & Guest, O.
+    (2022).
+    <span class="title">
+      <a href="//doi.org/10.1002/icd.2393">The Myth of Normative Development</a></span>.
+      <i>Infant and Child Development</i>.
+      
+
+      <a href="//doi.org/10.1002/icd.2393">https://doi.org/10.1002/icd.2393</a>
+      
+  </li>
+ 
+  <li class="item">
+    Erscoi, L., Kleinherenbrink, A., & Guest, O.
+    (2023).
+    <span class="title">
+      <a href="//doi.org/10.31235/osf.io/jqxb6">Pygmalion Displacement: When Humanising AI Dehumanises Women</a></span>.
+      <i>SocArXiv</i>. 
+
+      <a href="//doi.org/10.31235/osf.io/jqxb6">https://doi.org/10.31235/osf.io/jqxb6</a>
+      
+  </li>
+ 
+  <li class="item">
+    Guest, O. & Martin, A. E.
+    (2023).
+    <span class="title">
+      <a href="//doi.org/10.1007/s42113-022-00166-x">On Logical Inference over Brains, Behaviour, and Artificial Neural Networks</a></span>.
+      <i>Computational Brain & Behavior</i>.
+      
+
+      <a href="//doi.org/10.1007/s42113-022-00166-x">https://doi.org/10.1007/s42113-022-00166-x</a>
+      
+  </li>
+ 
+  <li class="item">
+    Guest, O.
+    (2023).
+    <span class="title">
+      <a href="//doi.org/10.31234/osf.io/8fxds">What makes a good theory, and how do we make a theory good?</a></span>.
+      <i>PsyArXiv</i>. 
+
+      <a href="//doi.org/10.31234/osf.io/8fxds">https://doi.org/10.31234/osf.io/8fxds</a>
+      
+  </li>
+ 
+  <li class="item">
+    van der Gun, L. & Guest, O.
+    (2023).
+    <span class="title">
+      <a href="//doi.org/10.31235/osf.io/rh4fw">Artificial Intelligence: Panacea or Non-intentional Dehumanisation?</a></span>.
+      <i>SocArXiv</i>. 
+
+      <a href="//doi.org/10.31235/osf.io/rh4fw">https://doi.org/10.31235/osf.io/rh4fw</a>
+      
+  </li>
+ 
+  <li class="item">
+    van Rooij, I., Guest, O., Adolfi, F. G., de Haan, R., Kolokolova, A., & Rich, P.
+    (2023).
+    <span class="title">
+      <a href="//doi.org/10.31234/osf.io/4cbuv">Reclaiming AI as a theoretical tool for cognitive science</a></span>.
+      <i>PsyArXiv</i>. 
+
+      <a href="//doi.org/10.31234/osf.io/4cbuv">https://doi.org/10.31234/osf.io/4cbuv</a>
+      
+  </li>
+
+</ul> -->
+
+<h2 id="license"><a href="#license">license</a></h2>
+
+<p>Content here unless otherwise noted is released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The <a href="https://github.com/oliviaguest/metatheory.space">code</a> is released under GPLv3. If you find things described here as useful or inspiring (e.g. you set up a similar reading circle), please feel free to drop <a href="https://olivia.science">Olivia</a> a message.</p>
+
+
+            </main>
+
+            <footer class="footer">
+    <div class="is-center">
+        <p><span class="flip">©</span> <a href="https://olivia.science">Olivia Guest</a>, 2024–25</p>
+    </div>
+</footer>
+        </div>
+    </body>
+</html>
