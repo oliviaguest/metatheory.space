@@ -1,3 +1,7 @@
+body {
+    font-family: Georgia, serif;
+  }
+
 body > .container {
     max-width: 70rem;
 }
@@ -22,6 +26,8 @@ p {
     float: left;
     overflow: hidden;
 } */
+
+
 
 h2 {
     scroll-margin-top: 1rem;
@@ -195,4 +201,18 @@ h2:before {
 }
 span.logotext {
     line-height: 3rem;
+}
+
+footer.footer a {
+    color: black;
+}
+
+footer.footer a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+li {
+    text-indent: -4rem;
+    list-style: none;
 }

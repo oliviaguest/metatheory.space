@@ -33,6 +33,7 @@ github_username:  oliviaguest
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-scholar
 
 sass:
     sass_dir: _sass
@@ -41,6 +42,10 @@ collections:
   people:
 
 array: []
+
+scholar:
+  bibliography_template: bib
+  sort_by: year, month
 
 # Exclude from processing.
 # The following items will not be processed, by default.
