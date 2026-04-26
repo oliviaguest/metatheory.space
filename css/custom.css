@@ -14,6 +14,11 @@
     src: url('../css/Lineal-Heavy.woff'); /*URL to font*/
 }
 
+@font-face {
+    font-family: "Feroniapi";
+    src: url('../css/Feroniapi-MediumItalic.woff2'); /*URL to font*/
+}
+
 body {
 
     font-family: "Cascadia Mono", "Consolas", "Lucida Console", monospace;
@@ -42,7 +47,7 @@ body {
 
   }
 
-body > .container {
+body > .container, nav > .container {
     max-width: 70rem;
 
 }
@@ -127,7 +132,7 @@ a, .nav a {
 }
 
 h1 {
-    font-family: Lineal Heavy;
+    font-family: Feroniapi;
     font-size: clamp(2.8rem, 7vw, 6rem);
     padding-bottom: 0rem;
     margin-bottom: 0rem;
@@ -137,11 +142,12 @@ h1 {
 h1 #space
 {    font-family: LinealVF;
     font-weight: 250;
+    font-size: 90%;
 }
 
 h2 {
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 900;
     margin-bottom: 1rem;
     width: auto;
 
@@ -149,7 +155,7 @@ h2 {
 
 h3 {
     font-size: 3rem; 
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0.5rem;
 
 }
@@ -200,34 +206,6 @@ img.figure {
 .content {
     margin-top: 6rem;
 }
-
-.nav-container {
-    margin: auto;
-    width: 100%; 
-    background-color: light-dark(var(--light-menu), var(--dark-menu));
-
-
-    overflow: hidden;
-    /* -webkit-backdrop-filter: blur(5px); */
-    /* backdrop-filter: blur(5px); */
-
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    /* width: 100%; Full width */
-    /* padding-left: 0; */
-}
-
-  .nav {
-
-    font-family: LinealVF;
-    font-size: 1.7rem;
-
-    z-index: 999;
-    font-weight: 500;
-    margin: auto;
-        max-width: 70rem;
-
-  }
 
 
   .bibliography {
@@ -316,6 +294,12 @@ ul.socials a:hover, ul.right-socials a:hover {
 
 
 }
+
+h3.person {
+    font-family: Feroniapi;
+ font-weight: 500;
+ font-size: 3.75rem;
+}
 .person-info {
     display: flex;
     flex-direction: row;
@@ -363,26 +347,9 @@ circle, line {
     align-content: end;
 }
 
-/* .nav-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
-
-@media screen and (max-width: 450px){
-
-    .nav a {         
-           font-size: 1.3rem;
-        padding: 1rem 1rem;
-    }
-
-    
-}
 
 @media screen and (max-width: 600px) {
-    .nav {
-        position: initial !important; /* Set the navbar to fixed position */
-    }
+
 
     
     h2 {
@@ -433,4 +400,56 @@ margin-bottom: 0;
     display: flex;
     align-items: center;
 }
+}
+
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+    background-color: light-dark(var(--light-menu), var(--dark-menu));
+    margin-bottom: 3rem;
+    position: fixed;
+    width: 100%;
+
+} 
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 1rem calc(var(--grid-gutter)*0.5); 
+    text-decoration: none;
+    min-width: 5rem;
+} 
+
+#navbar a:hover{
+    background-color: light-dark(var(--light-tb), var(--dark-tb));
+}
+
+#nav-icons a{
+    float:right;
+
+}
+
+@media screen and (max-width: 410px) {
+
+
+        #navbar a {
+            padding: 0.9rem calc(var(--grid-gutter)*0.45); 
+            min-width: 4rem;
+            font-size: 90%;
+        }
+        #navbar {
+            position: absolute;
+        }
+    }
+@media screen and (max-width: 340px) {
+
+        #navbar a {
+                font-size: 85%;
+                padding: 0.85rem calc(var(--grid-gutter)*0.4); 
+
+        }
 }

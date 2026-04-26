@@ -8,7 +8,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
  
-        <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+        <link rel="stylesheet" href="/css/chota.min.css">
         <link rel="stylesheet" href="/css/custom.css">
 
         <script src="/js/dark_toggle.js"></script>
@@ -23,31 +23,20 @@
     </head>
     <body>
 
-            <div class="nav-container">
-
-    <nav class="nav">
-     <div class="nav-left">
-            <!-- <a class="brand" href="#top">
-                <span class="logotext">
-                    metatheory
-                    <span class="lowertext">
-                        .space
-                    </span>
-                </span> -->
-
+        <nav id="navbar">
+  <div class="container">
+  <div class="">
             <a href="./#about">about</a>
             <a href="./#people">people</a>
-            <a href="./#research">research</a></div>
-     <div class="nav-right">
-
-
-            <a href="#here" alt="toggle dark mode" onclick="toggleDarkMode(this.firstChild.nextSibling.id)">
-            <i class="fa-solid fa-moon" id="dark"></i>
-            </a>
-
-        </div></nav>
-
+            <a href="./#research">research</a>
     </div>
+    <div id="nav-icons">
+      <a href="#here" alt="toggle dark mode" onclick="toggleDarkMode(this.firstChild.nextSibling.id)">
+        <i class="fa-solid fa-moon" id="dark"></i>
+      </a>
+    </div>
+  </div>
+</nav>
 
 
         <div class="container"> 
