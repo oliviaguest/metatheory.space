@@ -1,5 +1,4 @@
 ---
-published: true
 firstname: Olivia
 surname: Guest
 role: Associate Professor
