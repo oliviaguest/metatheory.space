@@ -4,55 +4,44 @@
 {% if person  %}
 <div class="person-anchor" id="{{ person.firstname }}{{ person.surname }}"></div>
 
-<div class="row person-profile" >
-
-  <div class="col-12 person-info">
+<div class="row person-profile">
+  <div class="col-6">
     <h3 class="person"><a href="#{{ person.firstname }}{{ person.surname }}">{{ person.firstname }} {{ person.surname }}</a></h3>
+    </div>
 
     {% if person.socials %}
+    <div class="col-6">
     <ul class="socials">
-
     {% if person.socials.bsky %}
-    <li class="social"><a href="{{ person.socials.bsky }}" title="Follow {{ person.firstname }} {{ person.surname }} on Bluesky" style="text-decoration:none" rel="me"><i class="fa-brands fa-bluesky"></i></a></li>
-    {% endif %}
+    <li class="social"><a href="{{ person.socials.bsky }}" title="Follow {{ person.firstname }} {{ person.surname }} on Bluesky" style="text-decoration:none" rel="me"><i class="fa-brands fa-bluesky"></i></a></li>{% endif %}
 
     {% if person.socials.mastodon %}
     <li class="social"><a href="{{ person.socials.mastodon }}" title="Follow {{ person.firstname }} {{ person.surname }} on Mastodon" style="text-decoration:none" rel="me">
-    <i class="fa-brands fa-mastodon"></i>
-    </a></li>{% endif %}
+    <i class="fa-brands fa-mastodon"></i></a></li>{% endif %}
 
     {% if person.socials.github %}
-    <li class="social"><a href="{{ person.socials.github }}" title="Fork {{ person.firstname }} {{ person.surname }} on GitHub" style="text-decoration:none" rel="me">
-    <i class="fa-brands fa-github" aria-hidden="true"></i>
-    </a></li>{% endif %}
+    <li class="social"><a href="{{ person.socials.github }}" title="Fork {{ person.firstname }} {{ person.surname }} on GitHub" style="text-decoration:none" rel="me"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>{% endif %}
 
     {% if person.socials.scholar %}
-    <li class="social"><a href="{{ person.socials.scholar }}" title="View {{ person.firstname }} {{ person.surname }}'s Google Scholar profile" style="text-decoration:none" rel="me">
-    <i class="ai ai-google-scholar" aria-hidden="true"></i>
-    </a></li>{% endif %}
+    <li class="social"><a href="{{ person.socials.scholar }}" title="View {{ person.firstname }} {{ person.surname }}'s Google Scholar profile" style="text-decoration:none" rel="me"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>{% endif %}
 
     {% if person.socials.philpapers %}
-    <li class="social"><a href="{{ person.socials.philpapers }}" title="View {{ person.firstname }} {{ person.surname }}'s PhilPeople profile" style="text-decoration:none" rel="me">
-    <i class="ai ai-philpapers" aria-hidden="true"></i>
-    </a></li>{% endif %}
+    <li class="social"><a href="{{ person.socials.philpapers }}" title="View {{ person.firstname }} {{ person.surname }}'s PhilPeople profile" style="text-decoration:none" rel="me"><i class="ai ai-philpapers" aria-hidden="true"></i></a></li>{% endif %}
 
     {% if person.socials.orcid %}
-    <li class="social"> <a href="{{ person.socials.orcid }}" title="View {{ person.firstname }} {{ person.surname }}'s ORCID profile" style="text-decoration:none" rel="me">
-    <i class="ai ai-orcid" aria-hidden="true"></i>
-    </a></li>{% endif %}
+    <li class="social"><a href="{{ person.socials.orcid }}" title="View {{ person.firstname }} {{ person.surname }}'s ORCID profile" style="text-decoration:none" rel="me"><i class="ai ai-orcid" aria-hidden="true"></i></a></li>{% endif %}
     </ul>
+    </div>
     {% endif %}
-
-  </div>
 
   {% if person.image_path %}
   <div class="col-4">
-  <!-- <div class="col-4 person-photo"> -->
     <div class="frame-figure"><img src="{{ person.image_path }}" alt="photograph of {{ person.firstname }} {{ person.surname }}" class="figure is-center"></div>
     </div> 
   {% endif %}
 
-  <div class="col" style="display: flex; flex-direction: column; justify-content: space-around;">
+  <div class="col" 
+  style="display: flex; flex-direction: column; justify-content: space-around;">
 
   {{ person.bio }} 
   

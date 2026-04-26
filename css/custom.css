@@ -273,10 +273,10 @@ footer.footer {
     list-style: none;
 }
 
- li +  li 
+ol.bibliography li + ol.bibliography li 
 {
     padding-top: 0.5rem;
-}
+} 
 
 
 ul.socials {
@@ -285,7 +285,7 @@ ul.socials {
     padding: 0;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    margin: .7em 0 .7em;
+    margin: 1.5em 0 .7em;
 }
 
 ul.socials a:hover, ul.right-socials a:hover {
@@ -313,8 +313,8 @@ h3.person {
 }
 
 li.social {
-    padding-right: 1.5rem;
-    font-size: 3rem;
+    padding-right: 1rem;
+    font-size: 2.5rem;
 }
 
 li.right-social {
@@ -348,7 +348,9 @@ circle, line {
 
 
 @media screen and (max-width: 600px) {
-
+    .content {
+        font-size: smaller;
+    }
     
     h2 {
         font-size: 3.25rem;
@@ -360,8 +362,15 @@ circle, line {
         .frame-figure {
         width: 60%;
 }
- 
+ul.socials {
+    justify-content: left;
+    margin-top: 0rem;
+
 }
+}
+ 
+@media screen and (max-width: 700px) {
+
 
 h3.person {
     padding-bottom: 0;
@@ -371,14 +380,9 @@ h3.person {
 ul.socials {
 margin-bottom: 0;
 }
-    .person-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-            align-items: flex-start;
-    }
 
 
+}
 
 
 
