@@ -43,6 +43,7 @@ scholar:
   style: ./_plugins/apa.csl
   bibliography_template: bib
   sort_by: year, month
+  order: descending
   separate_links: true
   # bibtex_filters:
     # - latex
