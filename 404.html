@@ -7,85 +7,73 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-
+ 
         <link rel="stylesheet" href="https://unpkg.com/chota@latest">
         <link rel="stylesheet" href="/css/custom.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="/js/randomise.js"></script>
+
+        <script src="/js/dark_toggle.js"></script>
+
+        <link href="https://olivia.science/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+        <link href="https://olivia.science/assets/fontawesome/css/solid.min.css" rel="stylesheet">
+        <link href="https://olivia.science/assets/fontawesome/css/regular.min.css" rel="stylesheet">
+        <link href="https://olivia.science/assets/fontawesome/css/brands.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+
         <title></title>
     </head>
-
-    <style>
-        body.dark {
-          --bg-color: #000;
-          --bg-secondary-color: #131316;
-          --font-color: #f5f5f5;
-          --color-grey: #ccc;
-          --color-darkGrey: #777;
-        }
-      </style>
-      <script>
-        if (window.matchMedia &&
-            window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          document.body.classList.add('dark');
-        }
-      </script>
-
     <body>
 
         <nav class="nav">
     <div class="nav-container">
      <div class="nav-left">
-            <a class="brand" href="#top">
-                
+            <!-- <a class="brand" href="#top">
                 <span class="logotext">
-                    metatheory<br/>
+                    metatheory
                     <span class="lowertext">
                         .space
                     </span>
-                </span>
+                </span> -->
 
-            <a href="#about">about</a>
-            <!-- <a href="#people">people</a> -->
-            <a href="#readings">readings</a>
+            <a href="./#about">about</a>
+            <a href="./#people">people</a>
+            <a href="./#research">research</a>
+
+            <a href="#here" alt="toggle dark mode" onclick="toggleDarkMode(this.firstChild.nextSibling.id)">
+            <i class="fa-solid fa-moon" id="dark"></i>
+            </a>
+
         </div>
     </div>
 </nav>
 
         <div class="container"> 
             <div class="content"> 
-            <main>
-                <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+                <div class="row">
+<div class="col-12">
+<h1><a href="./">metatheory<span id="space">.space</span></a></h1>
 
-<div class="container">
-  <h1>404</h1>
+</div></div>
 
-  <p><strong>Page not found :(</strong></p>
+
+<div class="row">
+     <div class="col-12">
+
+     <h2 id="404"><a href="#404">404</a></h2>
+
+
   <p>The requested page could not be found.</p>
+  
+  <p>Go back to the <a href="http://localhost:4000">main page</a>
+    and/or let <a href=" https://olivia.science/">Olivia</a> know if you think this should not be happening.</p>
+</div>
 </div>
 
-            </main>
-
-            <footer class="footer">
+                <footer class="footer">
     <div class="is-center">
-        <p><span class="flip">©</span> <a href="https://olivia.science">Olivia Guest</a>, 2024–25</p>
+        <p><span class="flip">©</span> <a href="https://olivia.science">Olivia Guest</a>, 2024–26</p>
     </div>
 </footer>
+            </div>
         </div>
     </body>
 </html>

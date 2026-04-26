@@ -1,0 +1,103 @@
+window.onload = function() {
+    var s = localStorage["s"];
+    console.log('top', s);
+    checkMonochrome();
+    if (typeof s !== 'undefined' && s !== null && s !== 'null') {
+      console.log('if', s);
+      toggleDarkMode(s);
+    }
+    // becasue I load the moon icon as default, if the user has darkmode as default in their own setttings, this now needs to be a sun
+    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        toggleDarkMode('dark');
+        console.log('user setting');
+    }
+  };
+
+function toggleDarkMode(s) {
+      // console.log('func', s.firstChild);
+      // console.log('func', s.firstChild.nextSibling.id);
+
+      localStorage["s"] = s; // save in local storage the preference just selected
+      // localStorage["s"] = null; // save in local storage the preference just selected
+
+      // root = document.querySelector(":root");
+
+      // no matter what, we know the user requested s as the dark or light option, so set body to that class
+      document.body.className = s; // NB: this makes a strong assumption that body has no other classes, since it overwrites them
+
+      // it could be the case this preference is not reflected in the icon/page etc.
+      try {
+        // get the icon
+        var e = document.getElementById(s);
+
+        // if the selected setting is dark, then the icon should now switch to the sun, so as to be able to revert back to light
+        if (s == 'dark') {
+          e.classList.remove("fa-moon");
+          e.classList.add("fa-sun");
+          e.id = 'light';
+
+          // root.classList.remove('light');
+          // root.classList.add('dark');
+
+        }
+        // otherwise the opposite
+        else if (s == 'light') {
+          e.classList.add("fa-moon");
+          e.classList.remove("fa-sun");
+          e.id = 'dark';
+          // root.classList.remove('dark');
+          // root.classList.add('light');
+
+        }
+      } catch (e) {
+          // catch here because there is a chance the user is on a page that has no such button to change from light to dark
+          // console.log(e instanceof TypeError); // true
+          // console.log(e.message); // "null has no properties"
+          // console.log(e.name); // "TypeError"
+          // console.log(e.stack); // Stack of the error
+      }
+};
+
+ 
+
+function checkMonochrome()
+{
+      var m = localStorage["m"];
+      var styles = `
+      html { 
+        filter: grayscale(100%) brightness(100%) contrast(110%) ;
+      }
+      `  
+      if (m == 1) {
+          var styleSheet = document.createElement("style");
+          styleSheet.textContent = styles;
+          document.head.appendChild(styleSheet);
+      }
+}
+
+function toggleMonochrome() {
+      var m = localStorage["m"];
+
+      var styles = `
+      html { 
+        filter: grayscale(100%) brightness(100%) contrast(110%) ;
+      }
+      `  
+
+      if (m == 1) {
+          m = 0;
+          styles = `
+          html { 
+            filter: grayscale(0%) contrast(100%) brightness(100%);
+          }
+          `
+      } else {
+          m = 1;
+      }
+
+      localStorage["m"] = m; // save it
+      var styleSheet = document.createElement("style");
+      styleSheet.textContent = styles;
+      document.head.appendChild(styleSheet);
+
+};

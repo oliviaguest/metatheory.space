@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+
+@font-face {
+    font-family: "Interlope Regular";
+    src: url('../css/Interlope-Regular.woff'); /*URL to font*/
+}
+@font-face {
+    font-family: "LinealVF";
+    src: url('../css/LinealVF.woff'); /*URL to font*/
+}
+@font-face {
+    font-family: "Lineal Heavy";
+    src: url('../css/Lineal-Heavy.woff'); /*URL to font*/
+}
+
 body {
-    font-family: Georgia, serif;
+
+    font-family: "Cascadia Mono", "Consolas", "Lucida Console", monospace;
+    font-weight: 300;
+    font-style: normal;
+    color: light-dark(var(--light-color), var(--dark-color));
+    background-color: light-dark(var(--light-bg), var(--dark-bg));
+
+
+    /* font-family: Georgia, serif; */
       /* These are technically the same, but use both */
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -15,21 +39,84 @@ body {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
   }
 
 body > .container {
     max-width: 70rem;
+
+}
+html {
+    hyphens: auto;
+    font-size: 75%;
 }
 
-.nav-container {
-    max-width: 70rem;
-    margin: auto;
+:root {
+
+    color-scheme: light dark;
+  
+    --light-bg: #fcfffc;
+    --light-color: #1d1d1d;
+    --light-h: rgb(33, 33, 33);
+    --light-a: #094f0c;
+    --light-menu: #edf6ee;	
+    --light-underline: #acccac;	
+    --light-url-bg: #edf3ed;
+    --light-person-bg: #f3f7f3;
+  
+    --dark-bg: #011b02;
+    --dark-color: #f4f4f4;
+    --dark-h: #f1f1f1;
+    --dark-a: #acccac;
+    --dark-menu: #022a05;
+    --dark-underline: #06620b;
+    --dark-url-bg: #000000;
+    --dark-person-bg: #000600;
+
+
 }
-html {hyphens: auto;}
+.light {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+
+
 
 p {
-    text-align: justify;
+    text-align: left;
+    margin-bottom: 0;
 }
+
+p + p {
+    margin-top: 1.5rem;
+}
+
+a, .nav a {
+    color: light-dark(var(--light-a), var(--dark-a));
+
+}
+
+
+.content p a, ul a {
+    text-decoration-thickness:0.3rem ;
+    text-decoration-line: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: light-dark(var(--light-underline), var(--dark-underline));
+
+}
+
+.content a.citation {
+    text-decoration: none;
+}
+.content p a:hover, ul a:hover, ol a:hover {
+    /* text-decoration: underline; */
+    background-color: light-dark(var(--light-url-bg), var(--dark-url-bg));
+    text-decoration: none;
+}
+
+
 
 .flip {
     display: inline-block;
@@ -37,37 +124,43 @@ p {
     filter: FlipH;
 }
 
-/* .profilephoto {
-    float: left;
-    overflow: hidden;
-} */
+h1 {
+    font-family: Lineal Heavy;
+    font-size: clamp(2.8rem, 7vw, 6rem);
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
 
-
+h1 #space
+{    font-family: LinealVF;
+    font-weight: 250;
+}
 
 h2 {
-    scroll-margin-top: 1rem;
-}
-
-h1 {
-    font-size: 5rem;
-}
-
-.logo {    display: none;
-}
-h1, h2, .brand{
-    font-family: 'Gloock', serif;
-    
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 3rem; 
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+
+}
+
+h2, h3 {
+    font-family: LinealVF;
 }
 
 h1 a, h2 a, h3 a {
-    color: black;    
+    color: light-dark(var(--light-h), var(--dark-h));
 }
 
-.rainbow:hover, a:hover
+
+
+.rainbow:hover
 {
     background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
     -webkit-background-clip: text;
@@ -75,43 +168,22 @@ h1 a, h2 a, h3 a {
     opacity: 1  !important;
 }
 
-figure {
-    margin: 0;
-    background: pink;
-    /* background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722); */
-    position: relative;
 
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    margin-right: 0.75rem;
-
-
-    width: 200px;
-    height: 200px;
-    float: left;
+.frame-figure {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
+img.figure {
+  filter: none;
+  opacity: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 
-
-
-.pfp {
-    /* margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    margin-right: 0.75rem; */
-
-
-    overflow: hidden;
-    max-width: unset;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: 50% 50%;
-
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
-    opacity: 0.9;
 }
 
 
@@ -119,13 +191,138 @@ figure {
 .content {
     margin-top: 6rem;
 }
-@media screen and (max-width: 725px) {
-figure {
-    margin-bottom: -0.5rem;
-    margin-left: 0;
+
+.nav-container {
+    max-width: 70rem;
+    margin: auto;
+}
+
+  .nav {
+
+    font-family: LinealVF;
+    font-size: 1.7rem;
+
+    z-index: 999;
+    font-weight: 400;
+
+    overflow: hidden;
+    background-color: light-dark(var(--light-menu), var(--dark-menu));
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* backdrop-filter: blur(5px); */
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    /* padding-left: 0; */
+  }
+
+
+  .bibliography {
+    padding-left: 4rem;
+
+  }
+
+:target {
+        padding-top: 6rem;
+        z-index: -2;
+        position: relative;
+}
+
+.bibliography  :target b {
+    color: fuchsia;
+}
+
+
+
+
+
+.item {
+    text-indent: -2em;
+    list-style-type: none;
+  }
+
+footer.footer a {
+    color: light-dark(var(--light-a), var(--dark-a));
+    text-decoration: none;
+}
+
+footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 95%;
+}
+
+.bibliography li {
+
+    text-indent: -4rem;
+    list-style: none;
+}
+
+ li +  li 
+{
+    padding-top: 0.5rem;
+}
+
+
+ul.socials {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: .7em 0 .7em;
+}
+
+ul.socials a:hover, ul.right-socials a:hover {
+        background-color: unset;
 
 
 }
+.person-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.person-profile {
+    background-color: light-dark(var(--light-person-bg), var(--dark-person-bg));
+    margin-bottom: 4rem;
+}
+
+li.social {
+    padding-right: 1.5rem;
+    font-size: 3rem;
+}
+
+li.right-social {
+    padding-left: 1.5rem;
+    padding-right: 0;
+
+}
+#no-ai {
+    height: 4rem;
+    width: 4rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+rect {
+  fill: light-dark(var(--light-a), var(--dark-a));
+
+}
+
+circle, line {
+    stroke: light-dark(var(--light-color), var(--dark-color));
+}
+
+.person-photo {
+            display: flex;
+
+    align-content: end;
 }
 
 @media screen and (max-width: 600px) {
@@ -140,94 +337,33 @@ figure {
   .content {
     margin-top: 1rem;
 }
+
+h3.person {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.column {
-    clear: both;
+ul.socials {
+margin-bottom: 0;
+}
+    .person-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+            align-items: flex-start;
+    }
+
+    .frame-figure {
+        width: 40%;
+}
 
 }
 
-/* .footer {
-    background-color: white;
-} */
+@media screen and (max-width: 900px) {
 
-img {
-    -webkit-transition: filter 0.5s;
-    -moz-transition: filter 0.5s;
-    -ms-transition: filter 0.5s;
-    -o-transition: filter 0.5s;
-    transition: filter 0.5s;
 
-    
-
+.person-photo {
+    display: flex;
+    align-items: center;
 }
-
-
-
-img:hover {
-    /* mix-blend-mode: hard-light; */
-    -webkit-filter: grayscale(10%) contrast(150%);
-    filter: grayscale(10%) contrast(150%);
-  }
-
-  .nav {
-
-    z-index: 999;
-
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.75);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    /* padding-left: 0; */
-  }
-
-  .nav .brand, .nav a {
-    padding-left: 0;
-
-
-  }
-
-h2:before {
-    height: 4rem;
-    content: "";
-    display:block;
-  }
-
-  .nav .brand {
-    font-size: 3rem;
-}
-
-.item {
-    text-indent: -2em;
-    list-style-type: none;
-  }
-
-  span.lowertext {
-    font-size: 1.5rem;
-    line-height: 0rem;
-    text-align: right;
-    display: block;
-    padding-right: 1.75rem;
-    padding-top: 0.1rem;
-    padding-bottom: 1rem;
-}
-span.logotext {
-    line-height: 3rem;
-}
-
-footer.footer a {
-    color: black;
-}
-
-footer.footer a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-li {
-    text-indent: -4rem;
-    list-style: none;
 }
