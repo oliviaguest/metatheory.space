@@ -203,7 +203,7 @@ img.figure {
     font-size: 1.7rem;
 
     z-index: 999;
-    font-weight: 400;
+    font-weight: 500;
 
     overflow: hidden;
     background-color: light-dark(var(--light-menu), var(--dark-menu));
@@ -325,9 +325,34 @@ circle, line {
     align-content: end;
 }
 
+.nav-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 450px){
+
+    .nav a {         
+           font-size: 1.3rem;
+        padding: 1rem 1rem;
+    }
+
+    
+}
+
 @media screen and (max-width: 600px) {
     .nav {
         position: initial !important; /* Set the navbar to fixed position */
+    }
+
+    
+    h2 {
+        font-size: 3.25rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
     }
     
     .logo {
@@ -355,6 +380,10 @@ margin-bottom: 0;
 
     .frame-figure {
         width: 40%;
+}
+
+:target {
+        padding-top: 0rem;
 }
 
 }
