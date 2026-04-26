@@ -1,12 +1,9 @@
-<h2 id=""><a href="#"></a></h2>
+<h2 id="about"><a href="#about"></a></h2>
 
 Hello! 🍃 **metatheory.space** is a group that works at the foundations of *cognitive science*. Exploring questions such as:
 - How do we build [theory](https://olivia.science/theory) in cognitive science?
 - What does taking *computationalism* seriously imply?
 - How do we use formal models to reason about cognition?
-
-
-<h2 id="about"><a href="#about">about</a></h2>
 
 We are interested in the intersections of cognitive science, especially psychological and computational neurocognitive theorising, and *[critical artificial intelligence](https://olivia.science/ai)* with a focus on metatheoretical considerations at play in this vast interdisciplinary landscape.
 
