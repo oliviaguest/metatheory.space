@@ -3,17 +3,51 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: metatheory.space
+title: >
+     metatheory.space
 ---
 
-<!-- <p>Hello! 🍃 Welcome to a corner of the web where we keep you and ourselves updated with our theoretical and metatheoretical work that is embdeed in and touches on many of the cognitive sciences. What is metatheory, you ask? Well, you have certainly come to the right place to find out what (we think) it is.</p>
 
-<p>Below you will find a list of subprojects and people, papers and possibly more. Hopefully, these help shed light on what metatheory is or can be and how we use the term; but also generally on our work, which may or may not neatly fall under "metatheory" in every case.</p> -->
+<div class="row">
+<div class="col-12">
+<h1><a href="#top">metatheory<span id="space">.space</span></a></h1>
+     {% capture about %}{% include about.md %}{% endcapture %}
+     {{ about | markdownify }}
+</div>
+</div>
 
-{% include about.html %}
 
-<!-- {% include people.html %} -->
+<div class="row">
+     <div class="col-12">
+          <h2 id="research"><a href="#research">research</a></h2>
+     </div>
+   
 
-{% include readings.html %}
+     <div class="col-12">
+     {% capture research %}{% include research.md %}{% endcapture %}
+     {{ research | markdownify }}
 
-{% include license.html %}
+
+     </div>
+</div>
+<div class="row">
+     <div class="col-12">
+     {% include references.html %}
+    </div>
+</div>
+
+<div class="row">
+     <div class="col-12">
+          <h2 id="people"><a href="#people">people</a></h2>
+     </div>
+</div>
+
+     {% include people.html %}
+
+
+<div class="row">
+     <div class="col-12">
+{% capture license %}{% include license.md %}{% endcapture %}
+{{ license | markdownify }}
+</div>
+</div>

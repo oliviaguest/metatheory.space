@@ -1,6 +1,9 @@
 ---
 ---
 
-{% if entry.hidden_url %}
-<a href="{{ entry.hidden_url }}">{{reference}}</a>
-{% else %} {{reference}} {% endif %}
+{{reference}} 
+    {% if entry.doi %}
+    <span><a href="{{ entry.doi | prepend: 'http://doi.org/' }}">{{ entry.doi | prepend: 'http://doi.org/' }}</a></span>
+    {% elsif entry.url %}
+    <span><a href="{{ entry.url }}">{{ entry.url }}</a></span>
+    {% endif %}
