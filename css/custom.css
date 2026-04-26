@@ -63,6 +63,7 @@ html {
     --light-underline: #acccac;	
     --light-url-bg: #edf3ed;
     --light-person-bg: #f3f7f3;
+    --light-highlight: fuchsia;
   
     --dark-bg: #011b02;
     --dark-color: #f4f4f4;
@@ -72,6 +73,7 @@ html {
     --dark-underline: #06620b;
     --dark-url-bg: #000000;
     --dark-person-bg: #000600;
+    --dark-highlight: #ff9cff;
 
 
 }
@@ -141,6 +143,8 @@ h2 {
     font-size: 4rem;
     font-weight: 400;
     margin-bottom: 1rem;
+    width: auto;
+
 }
 
 h3 {
@@ -152,6 +156,11 @@ h3 {
 
 h2, h3 {
     font-family: LinealVF;
+}
+
+h1 a:hover #meta {
+        color: light-dark(var(--light-highlight), var(--dark-highlight));
+
 }
 
 h1 a, h2 a, h3 a {
@@ -193,8 +202,19 @@ img.figure {
 }
 
 .nav-container {
-    max-width: 70rem;
     margin: auto;
+    width: 100%; 
+    background-color: light-dark(var(--light-menu), var(--dark-menu));
+
+
+    overflow: hidden;
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* backdrop-filter: blur(5px); */
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    /* width: 100%; Full width */
+    /* padding-left: 0; */
 }
 
   .nav {
@@ -203,17 +223,10 @@ img.figure {
     font-size: 1.7rem;
 
     z-index: 999;
-    font-weight: 400;
+    font-weight: 500;
+    margin: auto;
+        max-width: 70rem;
 
-    overflow: hidden;
-    background-color: light-dark(var(--light-menu), var(--dark-menu));
-    /* -webkit-backdrop-filter: blur(5px); */
-    /* backdrop-filter: blur(5px); */
-
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    /* padding-left: 0; */
   }
 
 
@@ -226,14 +239,39 @@ img.figure {
         padding-top: 6rem;
         z-index: -2;
         position: relative;
+
 }
+
 
 .bibliography  :target b {
-    color: fuchsia;
+    color: light-dark(var(--light-highlight), var(--dark-highlight));
 }
 
+.circle {
+      border-radius: 100%;
+  background-color: light-dark(var(--light-highlight), var(--dark-highlight));
 
+  padding: 20px;
+  width: 25vmin;
+  height: 25vmin;
+}
 
+.rectangle {
+  background-color: light-dark(var(--light-highlight), var(--dark-highlight));
+
+  padding: 20px;
+  width: 25vmin;
+  height: 25vmin;
+}
+.rounded-rectangle {
+          border-radius: 15%;
+
+  background-color: light-dark(var(--light-highlight), var(--dark-highlight));
+
+  padding: 20px;
+  width: 25vmin;
+  height: 25vmin;
+}
 
 
 .item {
@@ -325,9 +363,34 @@ circle, line {
     align-content: end;
 }
 
+/* .nav-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+@media screen and (max-width: 450px){
+
+    .nav a {         
+           font-size: 1.3rem;
+        padding: 1rem 1rem;
+    }
+
+    
+}
+
 @media screen and (max-width: 600px) {
     .nav {
         position: initial !important; /* Set the navbar to fixed position */
+    }
+
+    
+    h2 {
+        font-size: 3.25rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
     }
     
     .logo {
@@ -355,6 +418,10 @@ margin-bottom: 0;
 
     .frame-figure {
         width: 40%;
+}
+
+:target {
+        padding-top: 0rem;
 }
 
 }
