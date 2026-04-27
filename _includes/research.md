@@ -1,5 +1,5 @@
 
-Some main themes of our research with relevant readings are found below.
+Some main themes of our research with relevant readings are found below. And below that are all our [publications](#publications).
 
 <h3 id="metatheory"><a href="#metatheory">metatheory</a></h3>
   Meta (from Greek, μετά) means something before or above another; and theory (also originally from Greek, θεωρία) is, for our intents and purposes, a scientific product with certain properties.
@@ -12,7 +12,7 @@ Some main themes of our research with relevant readings are found below.
 
 <p>{% bibliography --query @*[keywords = metatheory] %}</p>
 <p>And for a specific metatheoretical treatment of mental representation under computationalism, see:</p>
-<p>{% bibliography --query @*[key = guestmartin2025] %}</p>
+<p>{% bibliography --query @*[key = guestmartin2025are] %}</p>
 
 <h3 id="metamethodology"><a href="#metamethodology">metamethodology</a></h3>
   <p>Metamethodology and metatheory are related, with the former having more of an emphasis on understanding <i>how</i> computational cognitive science is done in the general case, i.e. involving modelling and theory. So while metatheory has an emphasis on how we reason about, over, and with theories — <i>metamethodology</i> involves describing how computational cognitive science is or could be practiced, how the mediation from models (e.g. formalisms, code) between theory and data is or can be carried out.</p>

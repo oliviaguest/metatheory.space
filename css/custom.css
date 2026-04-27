@@ -433,7 +433,7 @@ margin-bottom: 0;
         #navbar a {
             padding: 0.9rem calc(var(--grid-gutter)*0.45); 
             min-width: 4rem;
-            font-size: 90%;
+            font-size: 80%;
         }
         #navbar {
             position: absolute;
@@ -442,8 +442,7 @@ margin-bottom: 0;
 @media screen and (max-width: 340px) {
 
         #navbar a {
-                font-size: 85%;
-                padding: 0.85rem calc(var(--grid-gutter)*0.4); 
+            padding: 0.85rem calc(var(--grid-gutter)*0.4); 
 
         }
 }
