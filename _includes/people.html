@@ -4,7 +4,7 @@
 {% if person  %}
 <div class="person-anchor" id="{{ person.firstname }}{{ person.surname }}"></div>
 
-<div class="row person-profile">
+<div class="row person-name-socials">
   <div class="col-6">
     <h3 class="person"><a href="#{{ person.firstname }}{{ person.surname }}">{{ person.firstname }} {{ person.surname }}</a></h3>
     </div>
@@ -33,15 +33,15 @@
     </ul>
     </div>
     {% endif %}
-
+</div>
+<div class="row person-profile">
   {% if person.image_path %}
   <div class="col-4">
     <div class="frame-figure"><img src="{{ person.image_path }}" alt="photograph of {{ person.firstname }} {{ person.surname }}" class="figure is-center"></div>
     </div> 
   {% endif %}
 
-  <div class="col" 
-  style="display: flex; flex-direction: column; justify-content: space-around;">
+  <div class="col">
 
   {{ person.bio }} 
   
