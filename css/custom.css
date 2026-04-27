@@ -305,7 +305,9 @@ h3.person {
     justify-content: space-between;
 }
 
-
+.person-name-socials {
+    background-color: light-dark(var(--light-person-bg), var(--dark-person-bg));
+}
 
 .person-profile {
     background-color: light-dark(var(--light-person-bg), var(--dark-person-bg));
