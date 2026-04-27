@@ -121,6 +121,7 @@ a, .nav a {
     /* text-decoration: underline; */
     background-color: light-dark(var(--light-url-bg), var(--dark-url-bg));
     text-decoration: none;
+    font-weight: bolder;
 }
 
 
@@ -197,6 +198,7 @@ img.figure {
   align-content: center;
   justify-content: center;
   align-items: center;
+  padding-top: 1.2rem;
 
 }
 
@@ -349,7 +351,7 @@ circle, line {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     .content {
         font-size: smaller;
     }
@@ -422,9 +424,14 @@ margin-bottom: 0;
     font-size: 1.4rem;
 } 
 
-#nav-icons a{
+#nav-icons a {
     float:right;
 
+}
+
+#navbar a:hover
+{
+    font-weight: 900;
 }
 
 @media screen and (max-width: 410px) {
