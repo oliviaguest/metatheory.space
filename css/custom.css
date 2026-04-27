@@ -419,6 +419,7 @@ margin-bottom: 0;
     padding: 1rem calc(var(--grid-gutter)*0.5); 
     text-decoration: none;
     min-width: 5rem;
+    font-size: 1.4rem;
 } 
 
 #nav-icons a{
