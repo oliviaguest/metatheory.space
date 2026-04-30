@@ -293,7 +293,7 @@ ul.socials {
     padding: 0;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    margin: 1.5em 0 .7em;
+    margin: 1rem 0 0;
 }
 
 ul.socials a:hover, ul.right-socials a:hover {
@@ -302,10 +302,12 @@ ul.socials a:hover, ul.right-socials a:hover {
 
 }
 
-h3.person {
+h4.person {
     font-family: Feroniapi;
  font-weight: 500;
  font-size: 3.75rem;
+ line-height: 3rem;
+  margin-bottom: 0rem;
 }
 .person-info {
     display: flex;

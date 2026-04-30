@@ -1,12 +1,20 @@
-{% assign people = site.people | sort: 'order' %}
+{% assign people_by_order = site.people | group_by: 'category' | sort:'category' | reverse %}
 
-{% for person in people %} 
+{% for category in people_by_order %} 
+<h3>{{ category.name }}</h3>
+
+{% assign people = category.items | sort: 'surname' %}
+
+
+{% for person in people %}
+
 {% if person  %}
 <div class="person-anchor" id="{{ person.firstname }}{{ person.surname }}"></div>
 
 <div class="row person-name-socials">
   <div class="col-6">
-    <h3 class="person"><a href="#{{ person.firstname }}{{ person.surname }}">{{ person.firstname }} {{ person.surname }}</a></h3>
+    <h4 class="person">
+      <a href="#{{ person.firstname }}{{ person.surname }}">{{ person.firstname }} {{ person.surname }}</a></h4>
     </div>
 
     {% if person.socials %}
@@ -48,4 +56,5 @@
   </div> 
 </div>
 {% endif %}
+{% endfor %}
 {% endfor %}

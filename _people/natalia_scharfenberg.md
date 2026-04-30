@@ -3,7 +3,7 @@ published: false
 firstname: Natalia
 surname: Scharfenberg
 role: PhD Candidate
-order: 2
+category: researchers
 image_path: https://profilepage.ru.nl/profileservice/rest/1.0//profilephoto/1779729?timestamp=1777020644&user=1779729&hash=56f595349f4bced9734611069334a038820ffa54a7695b8b3e394211bdef6d18&secure=false
 bio: >
    <p></p>
