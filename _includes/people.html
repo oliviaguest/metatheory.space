@@ -8,7 +8,7 @@
 
 {% for person in people %}
 
-{% if person  %}
+{% if person %}
 <div class="person-anchor" id="{{ person.firstname }}{{ person.surname }}"></div>
 
 <div class="row person-name-socials">
@@ -44,7 +44,7 @@
 </div>
 <div class="row person-profile is-vertical-align">
   {% if person.image_path %}
-  <div class="col-4">
+  <div class="col-5">
     <div class="frame-figure"><img src="{{ person.image_path }}" alt="photograph of {{ person.firstname }} {{ person.surname }}" class="figure is-center"></div>
     </div> 
   {% endif %}
@@ -58,3 +58,5 @@
 {% endif %}
 {% endfor %}
 {% endfor %}
+
+

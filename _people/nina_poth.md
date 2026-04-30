@@ -1,7 +1,7 @@
 ---
-firstname: Iris
-surname: van Rooij
-role: Professor
+firstname: Nina
+surname: Poth
+role: Assistant Professor
 category: collaborators
 # image_path: ""
 bio: >
