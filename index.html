@@ -9,6 +9,7 @@ title: >
 
 
 <div class="row">
+     
 <div class="col-12">
 <h1><a href="#top"><span id="meta">metatheory</span><span id="space">.space</span></a></h1>
      {% capture about %}{% include about.md %}{% endcapture %}
@@ -18,37 +19,37 @@ title: >
 
 
 <div class="row">
-     <div class="col-12">
+<div class="col-12">
           <h2 id="people"><a href="#people">people</a></h2>
-     </div>
-</div>
 
-     {% include people.html %}
-
-
-     
-<div class="row">
-     <div class="col-12">
-          <h2 id="research"><a href="#research">research</a></h2>
-     </div>
-   
-
-     <div class="col-12">
-     {% capture research %}{% include research.md %}{% endcapture %}
-     {{ research | markdownify }}
-
+               {% include people.html %}
 
      </div>
 </div>
+
+
+
+
 <div class="row">
-     <div class="col-12">
+
+<div class="col-12">
+                    <h2 id="research"><a href="#research">research</a></h2>
+     </div>
+</div>
+
+{% include research.html %}
+
+
+
+<div class="row">
+<div class="col-12">
      {% include references.html %}
     </div>
 </div>
 
 
 <div class="row">
-     <div class="col-12">
+<div class="col-12">  
 {% capture license %}{% include license.md %}{% endcapture %}
 {{ license | markdownify }}
 </div>

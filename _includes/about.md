@@ -9,7 +9,7 @@ We are interested in the intersections of cognitive science, especially psycholo
 
 <h3 id="values"><a href="#values">values</a></h3>
 
-We try our best to perform work that is radical and critical — and we especially welcome gender, coloniality, race, and other sociocultural consequences in the discussion of theories, of technologies, and of the general ways of performing and disseminating science {% cite guest2024what %}.
+We try our best to perform work that is radical and critical — and we especially welcome gender, coloniality, race, and other sociocultural consequences in the discussion of theories, of technologies, and of the general ways of performing and disseminating science {% cite guest2024makes %}.
 
 Relatedly, we also value making space for work that not only respects these perspectives, but also is about researchers' interests in and of themselves.
 There is something very radical in making space for voices that are not typically heard.
