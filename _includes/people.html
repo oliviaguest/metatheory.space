@@ -12,13 +12,13 @@
 <div class="person-anchor" id="{{ person.firstname }}{{ person.surname }}"></div>
 
 <div class="row person-name-socials">
-  <div class="col-6">
+    <div class="col-5-lg col-5-md col-5-sm col-12">
     <h4 class="person">
       <a href="#{{ person.firstname }}{{ person.surname }}">{{ person.firstname }} {{ person.surname }}</a></h4>
     </div>
 
     {% if person.socials %}
-    <div class="col-6">
+    <div class="col-7-lg col-7-md col-7-sm col-12">
     <ul class="socials">
     {% if person.socials.bsky %}
     <li class="social"><a href="{{ person.socials.bsky }}" title="Follow {{ person.firstname }} {{ person.surname }} on Bluesky" style="text-decoration:none" rel="me"><i class="fa-brands fa-bluesky"></i></a></li>{% endif %}
@@ -44,12 +44,16 @@
 </div>
 <div class="row person-profile is-vertical-align">
   {% if person.image_path %}
-  <div class="col-5">
-    <div class="frame-figure"><img src="{{ person.image_path }}" alt="photograph of {{ person.firstname }} {{ person.surname }}" class="figure is-center"></div>
-    </div> 
+  <div class="col-4-lg col-4-md col-4-sm col-12">
+    <div class="frame-figure">
+      <img src="{{ person.image_path }}" 
+      alt="photograph of {{ person.firstname }} {{ person.surname }}"
+      class="">
+    </div>
+  </div> 
   {% endif %}
 
-  <div class="col">
+  <div class="col-8-lg col-8-md col-8-sm col-12">
 
   {{ person.bio }} 
   

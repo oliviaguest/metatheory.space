@@ -23,6 +23,7 @@ body {
 
     font-family: "Cascadia Mono", "Consolas", "Lucida Console", monospace;
     font-weight: 300;
+    font-size: 1.5rem;
     font-style: normal;
     color: light-dark(var(--light-color), var(--dark-color));
     background-color: light-dark(var(--light-bg), var(--dark-bg));
@@ -304,16 +305,27 @@ ul.socials a:hover, ul.right-socials a:hover {
 
 h4.person {
     font-family: Feroniapi;
- font-weight: 500;
- font-size: 3.75rem;
- line-height: 3rem;
-  margin-bottom: 0rem;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin-bottom: 0rem;
+    padding-top: 0.75rem;
 }
 .person-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.frame-figure {
+    max-width: 25rem;
+    max-height: 25rem;
+    overflow: hidden;
+}
+.frame-figure img { 
+clip-path: rect(2rem 100% 25rem 0%);
+}
+
 
 .person-name-socials {
     background-color: light-dark(var(--light-person-bg), var(--dark-person-bg));
@@ -352,12 +364,6 @@ circle, line {
     stroke: light-dark(var(--light-color), var(--dark-color));
 }
 
-.person-photo {
-            display: flex;
-
-    align-content: end;
-}
-
 
 @media screen and (max-width: 599px) {
     .content {
@@ -371,14 +377,8 @@ circle, line {
     h3 {
         font-size: 2.5rem;
     }
-        .frame-figure {
-        width: 60%;
-}
-ul.socials {
-    justify-content: left;
-    margin-top: 0rem;
 
-}
+
 }
  
 @media screen and (max-width: 700px) {
@@ -400,15 +400,17 @@ margin-bottom: 0;
 
 @media screen and (max-width: 900px) {
 
+        .frame-figure {
+        width: 60%;
+    }
 
-.person-photo {
-    display: flex;
-    align-items: center;
+    ul.socials {
+        justify-content: left;
+        margin-top: 0rem;
+
+    }
+
 }
-
-
-}
-
 
 #navbar {
     position: sticky;
