@@ -131,8 +131,6 @@ a, .nav a {
     font-weight: 900;
 }
 
-
-
 .flip {
     display: inline-block;
     transform: scaleX(-1);
@@ -141,7 +139,7 @@ a, .nav a {
 
 h1 {
     font-family: Feroniapi;
-    font-size: clamp(2.8rem, 7vw, 6rem);
+    font-size: clamp(2.8rem, 7vw, 7.5rem);
     padding-bottom: 0rem;
     margin-bottom: 0rem;
 }
