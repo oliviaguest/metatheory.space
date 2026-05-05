@@ -3,17 +3,25 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: >
-     metatheory.space
+title: metatheory.space
 ---
 
+<div class="row">
+     <div class="col-12">
+
+<h1><a href="#top"><span id="meta">metatheory</span><span id="space">.space</span></a></h1>
+</div>
+</div>
 
 <div class="row">
-     
-<div class="col-12">
-<h1><a href="#top"><span id="meta">metatheory</span><span id="space">.space</span></a></h1>
+
+<div class="col-8-lg col-12">
      {% capture about %}{% include about.md %}{% endcapture %}
      {{ about | markdownify }}
+</div>
+    <div class="col images-flex">
+        <img src="images/gdj-psychology-5872032.svg" class="hide-md hide-sm hide-xs">
+
 </div>
 </div>
 
@@ -27,26 +35,19 @@ title: >
      </div>
 </div>
 
-
-
-
 <div class="row">
-
 <div class="col-12">
-                    <h2 id="research"><a href="#research">research</a></h2>
-     </div>
+     <h2 id="research"><a href="#research">research</a></h2>
+</div>
 </div>
 
 {% include research.html %}
-
-
 
 <div class="row">
 <div class="col-12">
      {% include references.html %}
     </div>
 </div>
-
 
 <div class="row">
 <div class="col-12">  
