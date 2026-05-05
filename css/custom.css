@@ -472,5 +472,5 @@ margin-bottom: 0;
 .images-flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
