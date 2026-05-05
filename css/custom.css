@@ -125,9 +125,10 @@ a, .nav a {
 }
 .content p a:hover, ul a:hover, ol a:hover {
     /* text-decoration: underline; */
+    color: light-dark(var(--light-highlight), var(--dark-highlight));
     background-color: light-dark(var(--light-url-bg), var(--dark-url-bg));
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 
