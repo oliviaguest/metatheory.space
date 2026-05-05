@@ -232,6 +232,10 @@ display: none;
     /* font-family: "Cascadia Mono", "Consolas", "Lucida Console", monospace; */
 }
 
+.dark .images-flex img {
+  filter: invert();
+}
+
 :target {
         padding-top: 6rem;
         z-index: -2;
