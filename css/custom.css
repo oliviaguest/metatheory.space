@@ -22,7 +22,7 @@
 body {
     font-family: "Cascadia Mono", "Consolas", "Lucida Console", monospace;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-style: normal;
     color: light-dark(var(--light-color), var(--dark-color));
     background-color: light-dark(var(--light-bg), var(--dark-bg));
@@ -48,7 +48,7 @@ body {
   }
 
 .container {
-    max-width: 80rem;
+    max-width: 70rem;
     /* margin-left: calc( 50vw - 50rem);
     margin-right: 0; */
 }
@@ -382,10 +382,7 @@ circle, line {
 
 
 @media screen and (max-width: 599px) {
-    .content {
-        font-size: smaller;
-    }
-    
+   
     h2 {
         font-size: 3.25rem;
     }
@@ -399,7 +396,7 @@ circle, line {
  
 @media screen and (max-width: 699px) {
         .content {
-        font-size: smaller;
+        font-size: 1.3rem;
     }
 .frame-figure
 {
