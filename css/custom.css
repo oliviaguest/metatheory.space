@@ -310,6 +310,7 @@ h4.person {
     line-height: 3rem;
     margin-bottom: 0rem;
     padding-top: 0.75rem;
+    line-height: 3.5rem;
 }
 .person-info {
     display: flex;
