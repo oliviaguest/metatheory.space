@@ -20,7 +20,6 @@
 }
 
 body {
-
     font-family: "Cascadia Mono", "Consolas", "Lucida Console", monospace;
     font-weight: 300;
     font-size: 1.5rem;
@@ -220,6 +219,18 @@ img.figure {
     padding-left: 4rem;
 
   }
+h2.bibliography {
+display: none;
+}
+
+ .publications h2.bibliography {
+    display: unset;
+    /* font-weight: 400; */
+    font-size: 2rem;
+    padding: 0rem;
+    margin: 0;
+    /* font-family: "Cascadia Mono", "Consolas", "Lucida Console", monospace; */
+}
 
 :target {
         padding-top: 6rem;
