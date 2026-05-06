@@ -1,5 +1,4 @@
 ---
-published: false
 firstname: Natalia
 surname: Scharfenberg
 role: PhD Candidate
