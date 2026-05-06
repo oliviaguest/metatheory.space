@@ -5,7 +5,7 @@ role: Lecturer
 category: collaborators
 image_path: "./photos/nancy_nuñezhernández.jpg"
 bio: >
-    <p>Nancy is a <b>Lecturer</b> at the Facultad de Estudios Superiores Acatlán-UNAM, México.</p>
+    <p>Nancy is a <strong>Lecturer</strong> at the Facultad de Estudios Superiores Acatlán-UNAM, México.</p>
     
     <p>For more on her and her interests, see <a href="https://nancyabigailnunezh.wixsite.com/nancy-abigail-nunez">her website</a>.</p>
 

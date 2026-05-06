@@ -30,32 +30,13 @@ title: metatheory.space
 <!-- </div> -->
 
 
-<div class="row">
-<div class="col-12">
-          <h2 id="people"><a href="#people">people</a></h2>
-
-               {% include people.html %}
-
-     </div>
-</div>
-
-<div class="row">
-<div class="col-12">
-     <h2 id="research"><a href="#research">research</a></h2>
-</div>
-</div>
+{% include people.html %}
 
 {% include research.html %}
 
-<div class="row">
-<div class="col-12">
-     {% include references.html %}
-    </div>
-</div>
+{% include publications.html %}
 
-<div class="row">
-<div class="col-12">  
-{% capture license %}{% include license.md %}{% endcapture %}
-{{ license | markdownify }}
-</div>
-</div>
+{% comment %}
+{% include readings.html %}{% endcomment %}
+
+{% include license.html %}

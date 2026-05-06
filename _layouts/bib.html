@@ -3,7 +3,7 @@
 
 {{reference}} 
     {% if entry.doi %}
-    <span><a href="{{ entry.doi | prepend: 'http://doi.org/' }}">{{ entry.doi | prepend: 'http://doi.org/' }}</a></span>
+    <span><a href="{{ entry.doi | prepend: 'https://doi.org/' }}">{{ entry.doi | prepend: 'https://doi.org/' }}</a></span>
     {% elsif entry.url %}
     <span><a href="{{ entry.url }}">{{ entry.url }}</a></span>
     {% endif %}

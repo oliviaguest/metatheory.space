@@ -1,11 +1,19 @@
+<div class="row">
+<div class="col-12">
+          <h2 id="people"><a href="#people">people</a></h2>
+     </div>
+</div>
+
 {% assign people_by_order = site.people | group_by: 'category' | sort:'category' | reverse %}
 
 {% for category in people_by_order %} 
-<h3>{{ category.name }}</h3>
+<div class="row">
+  <div class="col-12">
+  <h3>{{ category.name }}</h3>
+</div>
+</div>
 
 {% assign people = category.items | sort: 'surname' %}
-
-
 {% for person in people %}
 
 {% if person %}
