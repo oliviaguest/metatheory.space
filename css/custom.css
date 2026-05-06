@@ -451,10 +451,10 @@ margin-bottom: 0;
     float: left;
     display: block;
     text-align: center;
-    padding:  0 1rem; /*calc(var(--grid-gutter)*0.5); */
+    padding:  0.1rem 1rem; /*calc(var(--grid-gutter)*0.5); */
     text-decoration: none;
     min-width: 5rem;
-    font-size: 1.4rem;
+    font-size: 95%;
 } 
 
 #nav-icons a {
@@ -464,16 +464,18 @@ margin-bottom: 0;
 
 #navbar a:hover
 {
-    font-weight: 900;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 410px) {
 
 
         #navbar a {
-            padding: 0.9rem calc(var(--grid-gutter)*0.45); 
+            padding-top: 0.3rem;
+
+            /* padding: 0.85rem calc(var(--grid-gutter)*0.4);  */
             min-width: 4rem;
-            font-size: 80%;
+            font-size: smaller;
         }
         #navbar {
             position: absolute;
@@ -482,7 +484,7 @@ margin-bottom: 0;
 @media screen and (max-width: 340px) {
 
         #navbar a {
-            padding: 0.85rem calc(var(--grid-gutter)*0.4); 
+            padding: 0.3rem calc(var(--grid-gutter)*0.3); 
 
         }
 }
