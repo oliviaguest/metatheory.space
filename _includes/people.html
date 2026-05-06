@@ -17,12 +17,13 @@
 {% for person in people %}
 
 {% if person %}
-<div class="person-anchor" id="{{ person.firstname }}{{ person.surname }}"></div>
+
+<div class="person-anchor" id="{{ person.firstname | remove:' '}}{{ person.surname | remove:' '}}"></div>
 
 <div class="row person-name-socials">
     <div class="col-7-lg col-7-md col-7-sm col-12">
     <h4 class="person">
-      <a href="#{{ person.firstname }}{{ person.surname }}">{{ person.firstname }} {{ person.surname }}</a></h4>
+      <a href="#{{ person.firstname | remove:' '}}{{ person.surname | remove:' '}}">{{ person.firstname }} {{ person.surname }}</a></h4>
     </div>
 
     {% if person.socials %}
