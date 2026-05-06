@@ -298,10 +298,20 @@ footer.footer {
     list-style: none;
 }
 
+ol.bibliography {
+    margin: 0;
+}
 ol.bibliography li + ol.bibliography li 
 {
     padding-top: 0.5rem;
 } 
+
+
+.questions {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    /* padding-left: 3rem; */
+}
 
 
 ul.socials {
@@ -494,3 +504,4 @@ margin-bottom: 0;
   flex-direction: column;
   justify-content: space-around;
 }
+
