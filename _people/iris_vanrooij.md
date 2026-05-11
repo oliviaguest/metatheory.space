@@ -5,7 +5,7 @@ role: Professor
 category: collaborators
 image_path: "./photos/iris_vanrooij.jpg"
 bio: >
-    <p>Iris is a Professor of Computational Cognitive Science, in the Department of Cognitive Science and Artificial Intelligence, at the Donders Centre for Cognition, Radboud University, The Netherlands.</p>
+    <p>Iris is a <strong>Professor of Computational Cognitive Science</strong>, in the Department of Cognitive Science and Artificial Intelligence, at the Donders Centre for Cognition, Radboud University, The Netherlands.</p>
 
     <p>For more on her and her interests, see her website: <a href="https://irisvanrooijcogsci.com/"> https://irisvanrooijcogsci.com/</a>.</p>
 socials:
