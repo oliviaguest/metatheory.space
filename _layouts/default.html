@@ -21,6 +21,13 @@
 
         <script src="https://cdn.counter.dev/script.js" data-id="d88bbc10-ec68-48f6-bcdf-79be816d5598" data-utcoffset="1"></script>
         <title>{{ page.title }}</title>
+
+        <meta property="og:url" content="{{ page.url | absolute_url }}">
+        <meta property="og:type" content="{% if page.type != null %}{{ page.type }}{% elsif page.layout == "post" %}article{% else %}website{% endif %}">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:description" content="{{ page.description }}">
+        <meta property="og:image" content="{% if page.image != null %}{{ page.image }}{% else %}/images/me.jpg{% endif %}">
+
     </head>
     <body>
 
