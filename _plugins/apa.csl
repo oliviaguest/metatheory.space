@@ -776,7 +776,7 @@
         <text macro="title-serial"/>
       </else-if>
       <else>
-        <text macro="title-monographic"/>
+        <text macro="title-monographic" font-weight="bold"/>
       </else>
     </choose>
   </macro>

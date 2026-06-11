@@ -44,6 +44,7 @@ scholar:
   bibliography_template: bib
   sort_by: year, month
   group_by: year
+  order: descending
   group_order: descending, descending
   separate_links: true
   # bibtex_filters:
