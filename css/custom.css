@@ -473,6 +473,8 @@ margin-bottom: 0;
 
 #nav-icons a {
     float:right;
+    min-width: 4rem;
+
 
 }
 

@@ -1,7 +1,7 @@
 window.onload = function() {
     var s = localStorage["s"];
     console.log('top', s);
-    checkMonochrome();
+    checkTerrazzo();
     if (typeof s !== 'undefined' && s !== null && s !== 'null') {
       console.log('if', s);
       toggleDarkMode(s);
@@ -10,6 +10,22 @@ window.onload = function() {
     else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         toggleDarkMode('dark');
         console.log('user setting');
+    }
+  // };
+
+  //   window.onload = function() {
+    if (document.getElementById("deco-footer")) { 
+        const images = ['url("../images/page3.png")', 'url("../images/page4.png")', 'url("../images/page6.png")', 'url("../images/page8.png")'];
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+
+        const locations = ['top', 'center', 'bottom'];
+        const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+
+        document.getElementById("wide-header").style.backgroundImage = randomImage;
+        document.getElementById("wide-header").style.backgroundPosition = randomLocation;
+
+        document.getElementById("deco-footer").style.backgroundImage = randomImage;
+        document.getElementById("deco-footer").style.backgroundPosition = randomLocation;
     }
   };
 
@@ -60,44 +76,50 @@ function toggleDarkMode(s) {
 
  
 
-function checkMonochrome()
+function checkTerrazzo()
 {
       var m = localStorage["m"];
-      var styles = `
-      html { 
-        filter: grayscale(100%) brightness(100%) contrast(110%) ;
-      }
-      `  
+
+
+      var head = document.head;
+      var link = document.createElement("link");
+
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = "./css/terrazzo.css";
+      link.id = "terrazzo";
+
+
       if (m == 1) {
-          var styleSheet = document.createElement("style");
-          styleSheet.textContent = styles;
-          document.head.appendChild(styleSheet);
+          head.appendChild(link);
       }
 }
 
-function toggleMonochrome() {
+function toggleTerrazzo() {
       var m = localStorage["m"];
 
-      var styles = `
-      html { 
-        filter: grayscale(100%) brightness(100%) contrast(110%) ;
-      }
-      `  
+      var head = document.head;
+      var link = document.createElement("link");
+
+      link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = "./css/terrazzo.css";
+      link.id = "terrazzo";
+
 
       if (m == 1) {
           m = 0;
-          styles = `
-          html { 
-            filter: grayscale(0%) contrast(100%) brightness(100%);
-          }
-          `
+
+          link = document.getElementById('terrazzo');
+
+          head.removeChild(link);
+
       } else {
           m = 1;
+          head.appendChild(link);
+
       }
 
       localStorage["m"] = m; // save it
-      var styleSheet = document.createElement("style");
-      styleSheet.textContent = styles;
-      document.head.appendChild(styleSheet);
 
 };
