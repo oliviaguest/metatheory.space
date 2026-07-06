@@ -9,7 +9,7 @@
     --light-menu: fuchsia;	
     --light-underline: #c6b8b4;	
     --light-url-bg: #f7d9d9;
-    --light-person-bg: #fcf6f098;
+    --light-person-bg: #fcf6f0e3;
     --light-highlight: fuchsia;
 
   
@@ -20,7 +20,7 @@
     --dark-menu:  rgb(255, 0, 255);	
     --dark-underline: #62554b;
     --dark-url-bg: #200101;
-    --dark-person-bg: #2a241a9b;
+    --dark-person-bg: #3a3326d1;
     --dark-highlight: fuchsia;
 
 
@@ -32,13 +32,8 @@
 
    background-image:
       url("https://cdn.architextures.org/textures/26/5/egea-8290-eurogolv-terrazzo-ab-hel1l1.jpg"); /* W3C */
-   background-size: 120rem;
+   background-size: 100rem;
 
-  width: 100%;
-  height: 30rem;
-  position: absolute;
-  z-index: -1;
-  top: 4rem;
 
   border-bottom: 0.5rem solid light-dark(var(--light-highlight), var(--dark-highlight));
     }
@@ -50,24 +45,6 @@
     } 
 
 
-
-
-
-    #top-content
-    {
-      padding-top: 32rem;
-    }
-
-.content {
-  padding-top: 0rem;
-}
-
-#navbar {
-    /* border-bottom: 0.5rem solid light-dark(var(--light-highlight), var(--dark-highlight)); */
-  height: 4rem;
-
-}
-
 #navbar a, footer.footer a 
 {
     color: var(--light-bg); 
@@ -78,40 +55,27 @@
 
 footer.footer a 
 {
-      text-decoration-thickness:0.3rem ;
-    text-decoration-line: underline;
-    text-underline-offset: 0.3rem;
     text-decoration-color: rgba(255, 192, 203, 0.5);
 
 }
 
-footer.footer a:hover
-{
-      text-decoration: none;
-
-}
-
 footer.footer {
-
-    margin-top: 7rem;
-
     color: var(--light-bg); 
-
     background-color: var(--light-menu);
-    width: 100%;
-    height: 4.5rem;
-    margin-bottom: 0rem;
-    padding-top: 1.25rem;
 } 
 
 
 
 .divider
 {
-  padding-top: 7rem;
+  /* padding-top: 7rem; */
  background-size: 100%;
   width: 100%;
     border-bottom: 0.5rem solid light-dark(var(--light-highlight), 
     var(--dark-highlight));
-
+  position: absolute;
+  z-index: -1;
 }
+
+
+
