@@ -106,6 +106,7 @@ html {
     --dark-highlight: #ff9cff;
 
 
+
 }
 .light {
     color-scheme: light;
@@ -133,7 +134,7 @@ a, .nav a {
 }
 
 
-.content p a, ul a, footer.footer a {
+.content p a, footer.footer a, .bibliography a {
     text-decoration-thickness:0.3rem ;
     text-decoration-line: underline;
     text-underline-offset: 0.3rem;
@@ -144,7 +145,7 @@ a, .nav a {
 .content a.citation {
     text-decoration: none;
 }
-.content p a:hover, ul a:hover, ol a:hover, footer.footer a:hover{
+.content p a:hover, ul a:hover, ol a:hover, footer.footer a:hover, .bibliography a:hover {
     /* text-decoration: underline; */
     color: light-dark(var(--light-highlight), var(--dark-highlight));
     background-color: light-dark(var(--light-url-bg), var(--dark-url-bg));
@@ -240,10 +241,12 @@ img.figure {
 }
 
 
-  .bibliography {
+.bibliography {
     padding-left: 4rem;
 
-  }
+}
+
+
 h2.bibliography {
 display: none;
 }
@@ -329,13 +332,6 @@ ol.bibliography li + ol.bibliography li
 {
     padding-top: 0.5rem;
 } 
-
-
-.questions {
-    /* padding-top: 1rem; */
-    /* padding-bottom: 0rem; */
-    /* padding-left: 3rem; */
-}
 
 
 ul.socials {
