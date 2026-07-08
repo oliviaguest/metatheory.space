@@ -28,11 +28,11 @@
 } 
  
  #header {
-   background-image: url("https://cdn.architextures.org/textures/23/7/sabbia-terrazzo-none-gi8h8y.jpg");
+   /* background-image: url("https://cdn.architextures.org/textures/23/7/sabbia-terrazzo-none-gi8h8y.jpg");
 
    background-image:
       url("https://cdn.architextures.org/textures/26/5/egea-8290-eurogolv-terrazzo-ab-hel1l1.jpg"); /* W3C */
-   background-size: 100rem;
+   background-size: 100rem; */
 
 
   border-bottom: 0.5rem solid light-dark(var(--light-highlight), var(--dark-highlight));
@@ -40,7 +40,7 @@
 
     .dark #header {
    background-image:
-      url("https://cdn.architextures.org/textures/26/5/egea-8250-eurogolv-terrazzo-ab-o3ioli.jpg"); /* W3C */
+      /* url("https://cdn.architextures.org/textures/26/5/egea-8250-eurogolv-terrazzo-ab-o3ioli.jpg"); W3C */
  
     } 
 
